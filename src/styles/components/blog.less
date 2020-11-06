@@ -1,0 +1,48 @@
+main.app-body {
+    width: 40%;
+    margin: auto;
+    .blog-article{
+        border: 1px solid lightgray;
+        margin-bottom: 30px;
+        padding: 10px 5px;
+        border-radius: 5px;
+        display: flex;
+        cursor : pointer;
+        &:hover {
+            border : 1px solid gray;
+            transition : all ease-in-out 0.3s;
+        }
+        .side-vote{
+            flex: 0 0 2vw;
+        }
+        .side-vote > span {
+            display: block;
+            color: red;
+            :hover {
+                background: lightgray;
+            }
+        }
+        .vote-num{
+            text-align: center;
+        }
+        .blog-content {
+            flex-grow: 1;
+        }
+        .blog-content > a{
+            color: black;
+        }
+        .blog-icons {
+            display: flex;
+            justify-content: space-evenly;
+            div {
+                padding: 0 6px;
+            }
+            div:hover {
+                background: lightgray;
+            }
+        }
+    }
+    .create-post{
+        margin-bottom: 30px;
+    }
+}
