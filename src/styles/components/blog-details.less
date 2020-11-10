@@ -1,0 +1,45 @@
+main.app-body{
+    .learn-more{
+        border: 1px solid lightgray;
+        margin-bottom: 20px;
+        padding: 10px 5px;
+        border-radius: 5px;
+        cursor : pointer;
+        padding: 10px 30px;
+        overflow: auto;
+        &:hover {
+            border : 1px solid gray;
+            transition : all ease-in-out 0.3s;
+        }
+    }
+    .learn-content {
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+
+    .learn-bottom{
+        background-color: #F6F7F8;
+        padding: 10px 5px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .learn-bottom > a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .comment-editor{
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        .rdw-editor-wrapper{
+            flex-direction: column;
+            .rdw-editor-main{
+                min-height: 150px;
+                text-indent: 10px;
+            }
+        }
+    }
+}

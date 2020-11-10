@@ -30,19 +30,18 @@ class Blog extends React.Component {
   }
 
   handleClick = () => {
-    // Router.push('/blog');
     this.props.history.push('/blog')
   }
 
   render() {
     return (
-      <article className='blog-article' onClick={()=>this.handleClick()}>
+      <article className='blog-article'>
           <div className='side-vote'>
             <ArrowUpOutlined onClick={this.like} />
             <span className="vote-num">{(this.state.likes > this.state.dislikes) ? this.state.likes : - this.state.dislikes }</span>
             <ArrowDownOutlined onClick={this.dislike}/>
           </div>
-          <div className='blog-content'>
+          <div className='blog-content' onClick={()=>this.handleClick()}>
             <h5>posted by several mins ago</h5>
             <h3>Here is the blog content</h3>
             <br />
@@ -53,10 +52,9 @@ class Blog extends React.Component {
               <div><GiftOutlined /> Give Award</div>
               <div><ShareAltOutlined /> Share</div>
               <div><SaveOutlined /> Save</div>
-              <div>...</div>
             </div>
           </div>
-          <div>
+          <div className="blog-img">
             <img src="../../../blog.jpg"></img>
           </div>
         </article>
