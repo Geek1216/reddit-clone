@@ -58,7 +58,7 @@ class Header extends React.Component {
           <h3 className="logo">LOGO</h3>
         </Link>
         <div className="flex-fill" />
-        <Input placeholder="Search" size="large" prefix={<SearchOutlined />} />
+          <Input placeholder="Search" size="large" prefix={<SearchOutlined />} />
         <div className="flex-fill" />
         {loggedIn ? (
           <Dropdown overlay={
